@@ -3,17 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <h2>Analog</h2>
+    <h1>Ng Conf Perú 2026</h1>
 
-    <h3>The fullstack meta-framework for Angular!</h3>
+    <p>Únase a nosotros para una celebración de innovación, inspiración y comunidad inclusiva.</p>
 
-    <p class="read-the-docs">
-      <a href="https://analogjs.org" target="_blank">Docs</a> |
-      <a href="https://github.com/analogjs/analog" target="_blank">GitHub</a> |
-      <a href="https://github.com/sponsors/brandonroberts" target="_blank">
-        Sponsor
-      </a>
-    </p>
+    
   `,
   styles: ``,
 })

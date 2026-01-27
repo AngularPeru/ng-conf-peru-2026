@@ -15,23 +15,6 @@ import { Component } from '@angular/core';
       </a>
     </p>
   `,
-  styles: `
-    :host {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .read-the-docs > * {
-      color: #fff;
-    }
-
-    @media (prefers-color-scheme: light) {
-      .read-the-docs > * {
-        color: #213547;
-      }
-    }
-  `,
+  styles: ``,
 })
-export default class Home {}
+export default class Home { }

@@ -1,0 +1,126 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+:host {
+  display: block;
+}
+
+.stats {
+  background: $color-angular-red;
+  padding: 80px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  overflow: hidden;
+
+  &__title {
+    font-family: $font-inter;
+    font-weight: 700;
+    font-size: 60px;
+    color: $color-gray-100;
+    text-align: center;
+    max-width: 983px;
+  }
+
+  &__grid {
+    display: flex;
+    gap: 200px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__number {
+    font-family: $font-inter;
+    font-weight: 700;
+    font-size: 80px;
+    color: $color-gray-100;
+  }
+
+  &__label {
+    font-family: $font-inter;
+    font-weight: 700;
+    font-size: 32px;
+    color: $color-gray-100;
+  }
+}
+
+@include respond-to(lg) {
+  .stats {
+    padding: 60px 80px;
+
+    &__grid {
+      gap: 100px;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .stats {
+    padding: 60px 40px;
+
+    &__grid {
+      gap: 60px;
+    }
+
+    &__number {
+      font-size: 60px;
+    }
+
+    &__label {
+      font-size: 24px;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .stats {
+    padding: 48px 20px;
+    gap: 40px;
+  }
+
+  .stats__title {
+    font-size: 36px;
+  }
+
+  .stats__grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .stats__number {
+    font-size: 48px;
+  }
+
+  .stats__label {
+    font-size: 20px;
+  }
+}
+
+@include respond-to(xs) {
+  .stats {
+    padding: 40px 16px;
+    gap: 32px;
+  }
+
+  .stats__title {
+    font-size: 28px;
+  }
+
+  .stats__number {
+    font-size: 40px;
+  }
+
+  .stats__label {
+    font-size: 18px;
+  }
+}

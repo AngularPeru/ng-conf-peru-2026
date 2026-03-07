@@ -1,0 +1,9 @@
+@use 'styles/variables';
+@use 'styles/reset';
+@use 'styles/typography';
+@use 'styles/mixins';
+
+body {
+  background: var(--color-gray-10);
+  overflow-x: hidden;
+}

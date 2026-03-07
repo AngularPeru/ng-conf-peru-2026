@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-inter;
+  color: $color-gray-100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mono {
+  font-family: $font-jetbrains;
+}
+
+.font-onest {
+  font-family: $font-onest;
+}

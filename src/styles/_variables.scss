@@ -1,0 +1,61 @@
+:root {
+  --color-gray-0: #000000;
+  --color-gray-10: #0F0F11;
+  --color-gray-60: #8F8F8F;
+  --color-gray-100: #FFFFFF;
+  --color-angular-red: #F11653;
+  --color-deep-rose: #E90464;
+  --color-vivid-violet: #8514F5;
+
+  --font-inter: 'Inter', sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+  --font-onest: 'Onest', sans-serif;
+
+  --fs-hero: 100px;
+  --fs-xxl: 80px;
+  --fs-xl: 60px;
+  --fs-lg: 50px;
+  --fs-md-lg: 44px;
+  --fs-md: 32px;
+  --fs-body: 24px;
+  --fs-sm: 20px;
+  --fs-base: 16px;
+  --fs-xs: 14px;
+
+  --radius-pill: 100px;
+  --radius-card: 20px;
+  --radius-md: 16px;
+  --radius-sm: 4px;
+
+  --section-py: 80px;
+  --section-px: 140px;
+  --gap-xl: 80px;
+  --gap-lg: 60px;
+  --gap-md: 40px;
+  --gap-sm: 35px;
+  --gap-xs: 20px;
+  --gap-xxs: 12px;
+}
+
+$color-gray-0: #000000;
+$color-gray-10: #0F0F11;
+$color-gray-60: #8F8F8F;
+$color-gray-100: #FFFFFF;
+$color-angular-red: #F11653;
+$color-deep-rose: #E90464;
+$color-vivid-violet: #8514F5;
+
+$font-inter: 'Inter', sans-serif;
+$font-jetbrains: 'JetBrains Mono', monospace;
+$font-onest: 'Onest', sans-serif;
+
+$radius-pill: 100px;
+$radius-card: 20px;
+$radius-md: 16px;
+$radius-sm: 4px;
+
+$bp-xl: 1440px;
+$bp-lg: 1200px;
+$bp-md: 992px;
+$bp-sm: 768px;
+$bp-xs: 480px;

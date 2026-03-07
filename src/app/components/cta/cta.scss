@@ -1,0 +1,118 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+:host {
+  display: block;
+}
+
+.cta {
+  position: relative;
+  padding: 102px 214px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  overflow: hidden;
+  background: radial-gradient(
+    ellipse at 13% 86%,
+    rgb(236, 40, 123) 0%,
+    rgb(195, 49, 183) 50%,
+    rgb(154, 57, 242) 100%
+  );
+
+  &__decoration-left {
+    position: absolute;
+    left: 30px;
+    top: -166px;
+    width: 243px;
+    height: 368px;
+    opacity: 0.3;
+    transform: rotate(105deg);
+    pointer-events: none;
+  }
+
+  &__decoration-right {
+    position: absolute;
+    right: -80px;
+    bottom: -50px;
+    width: 275px;
+    height: 135px;
+    transform: rotate(90deg);
+    pointer-events: none;
+  }
+
+  &__title {
+    font-family: $font-inter;
+    font-weight: 700;
+    font-size: 60px;
+    color: $color-gray-100;
+    text-align: center;
+    max-width: 1012px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@include respond-to(lg) {
+  .cta {
+    padding: 80px 80px;
+
+    &__title {
+      font-size: 48px;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .cta {
+    padding: 60px 40px;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__actions {
+      flex-direction: column;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .cta {
+    padding: 48px 20px;
+    gap: 40px;
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .cta {
+    padding: 40px 16px;
+    gap: 32px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__decoration-left {
+      width: 140px;
+      height: 212px;
+    }
+
+    &__decoration-right {
+      width: 160px;
+      height: 78px;
+    }
+  }
+}

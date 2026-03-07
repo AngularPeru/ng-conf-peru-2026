@@ -1,0 +1,127 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+:host {
+  display: block;
+}
+
+.about {
+  position: relative;
+  background: $color-gray-10;
+  min-height: 490px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  &__decoration {
+    position: absolute;
+    left: -77px;
+    top: 0;
+    width: 245px;
+    height: 490px;
+    pointer-events: none;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 140px;
+    gap: 80px;
+  }
+
+  &__title {
+    font-family: $font-inter;
+    font-weight: 700;
+    font-size: 60px;
+    color: $color-gray-100;
+    max-width: 333px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-family: $font-inter;
+    font-weight: 400;
+    font-size: 24px;
+    color: $color-gray-100;
+    text-align: right;
+    max-width: 611px;
+    line-height: 1.5;
+
+    p + p {
+      margin-top: 24px;
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .about__inner {
+    padding: 0 80px;
+    gap: 40px;
+  }
+
+  .about__title {
+    font-size: 48px;
+  }
+
+  .about__text {
+    font-size: 20px;
+  }
+}
+
+@include respond-to(md) {
+  .about {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .about__inner {
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+  }
+
+  .about__title {
+    max-width: 100%;
+  }
+
+  .about__text {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@include respond-to(sm) {
+  .about__inner {
+    padding: 0 20px;
+    gap: 24px;
+  }
+
+  .about__title {
+    font-size: 36px;
+  }
+
+  .about__text {
+    font-size: 18px;
+  }
+}
+
+@include respond-to(xs) {
+  .about {
+    padding: 40px 0;
+  }
+
+  .about__inner {
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .about__title {
+    font-size: 28px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+}

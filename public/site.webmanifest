@@ -1,0 +1,67 @@
+{
+    "name": "Ng Conf Perú 2026",
+    "short_name": "Ng Conf Perú",
+    "description": "Conferencia de Angular en Perú - 9 y 10 de octubre de 2026 en Lima",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#0A0A0C",
+    "theme_color": "#E5097F",
+    "orientation": "portrait-primary",
+    "screenshots": [
+        {
+            "src": "/screenshot-narrow.png",
+            "sizes": "540x720",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshot-wide.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide"
+        }
+    ],
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        },
+        {
+            "src": "/icon-maskable-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/icon-maskable-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "categories": [
+        "productivity",
+        "business"
+    ],
+    "screenshots_extra": [
+        {
+            "src": "/hero-screenshot.png",
+            "sizes": "540x720",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+# Robots.txt for Ng Conf Perú 2026
+User-agent: *
+Allow: /
+Allow: /agenda
+Allow: /codigo-de-conducta
+Allow: /faq
+Disallow: /_next/
+Disallow: /api/
+Disallow: /*.json$
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for other bots
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 0.5
+
+# Sitemap location
+Sitemap: https://ngconf.angular-peru.com/sitemap.xml
+Sitemap: https://ngconf.angular-peru.com/sitemap-pages.xml

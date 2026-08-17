@@ -21,6 +21,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const savedLang = localStorage.getItem("ngconf_lang") as Language;
     if (savedLang === "ES" || savedLang === "EN") {
+      // Disable lint rule for this line to prevent cascading render warning on first client load
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLangState(savedLang);
     }
   }, []);

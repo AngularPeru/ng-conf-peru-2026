@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
-              href="/#entradas"
+              href="/checkout"
               className="px-8 py-3.5 rounded-full bg-[#E5097F] hover:bg-[#FF007A] text-white font-bold text-sm sm:text-base shadow-lg shadow-[#E5097F]/40 hover:scale-105 active:scale-95 transition-all duration-300"
             >
               {t.hero.buyTickets}

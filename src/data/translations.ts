@@ -2,6 +2,48 @@ export type Language = "ES" | "EN";
 
 export const translations = {
   ES: {
+    checkout: {
+      steps: {
+        info: "Información Personal",
+        payment: "Pago",
+        success: "¡Completado!"
+      },
+      info: {
+        title: "Información del Asistente",
+        firstName: "Nombre",
+        lastName: "Apellidos",
+        email: "Correo Electrónico",
+        docType: "Tipo de Documento",
+        docTypeDNI: "DNI",
+        docTypeCE: "Carné de Extranjería",
+        docTypePasaporte: "Pasaporte",
+        docNumber: "Número de Documento",
+        tshirtSize: "Talla de Camiseta",
+        dietary: "Restricciones Alimenticias (Opcional)",
+        next: "Continuar al Pago"
+      },
+      payment: {
+        title: "Detalles de Pago",
+        cardName: "Nombre en la tarjeta",
+        cardNumber: "Número de tarjeta",
+        expiry: "MM/AA",
+        cvv: "CVV",
+        pay: "Pagar Entrada",
+        back: "Volver",
+        error: "Los datos de la tarjeta no son válidos. Por favor, intenta de nuevo."
+      },
+      summary: {
+        title: "Resumen de Compra",
+        ticketName: "Entrada General - Ng Conf Perú 2026",
+        price: "S/ 150.00",
+        total: "Total:"
+      },
+      success: {
+        title: "¡Compra Exitosa!",
+        desc: "Tu entrada ha sido confirmada. Te hemos enviado un correo con los detalles.",
+        homeBtn: "Volver al Inicio"
+      }
+    },
     nav: {
       speakers: "Speakers",
       venue: "Venue",
@@ -208,6 +250,48 @@ export const translations = {
     },
   },
   EN: {
+    checkout: {
+      steps: {
+        info: "Personal Info",
+        payment: "Payment",
+        success: "Complete!"
+      },
+      info: {
+        title: "Attendee Information",
+        firstName: "First Name",
+        lastName: "Last Name",
+        email: "Email Address",
+        docType: "Document Type",
+        docTypeDNI: "ID Card",
+        docTypeCE: "Foreigner ID",
+        docTypePasaporte: "Passport",
+        docNumber: "Document Number",
+        tshirtSize: "T-Shirt Size",
+        dietary: "Dietary Restrictions (Optional)",
+        next: "Continue to Payment"
+      },
+      payment: {
+        title: "Payment Details",
+        cardName: "Name on card",
+        cardNumber: "Card number",
+        expiry: "MM/YY",
+        cvv: "CVV",
+        pay: "Pay Ticket",
+        back: "Back",
+        error: "Invalid card details. Please try again."
+      },
+      summary: {
+        title: "Order Summary",
+        ticketName: "General Ticket - Ng Conf Peru 2026",
+        price: "S/ 150.00",
+        total: "Total:"
+      },
+      success: {
+        title: "Purchase Successful!",
+        desc: "Your ticket has been confirmed. We have sent you an email with the details.",
+        homeBtn: "Back to Home"
+      }
+    },
     nav: {
       speakers: "Speakers",
       venue: "Venue",

@@ -74,7 +74,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                href="/#entradas"
+                href="/checkout"
                 className="px-5 py-2 rounded-full bg-[#E5097F] hover:bg-[#FF007A] text-xs xl:text-sm font-semibold text-white shadow-md shadow-[#E5097F]/30 hover:scale-105 active:scale-95 transition-all duration-200"
               >
                 {t.nav.ticketsBtn}
@@ -127,7 +127,7 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="/#entradas"
+              href="/checkout"
               className="px-3.5 py-1.5 rounded-full bg-[#E5097F] text-xs font-semibold text-white"
             >
               {t.nav.ticketsBtn}
@@ -169,7 +169,7 @@ export default function Navbar() {
               {t.nav.sponsorBtn}
             </Link>
             <Link
-              href="/#entradas"
+              href="/checkout"
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full py-2.5 px-4 rounded-full bg-[#E5097F] text-center text-sm font-semibold text-white shadow-lg shadow-[#E5097F]/40"
             >

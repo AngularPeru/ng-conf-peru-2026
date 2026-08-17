@@ -12,7 +12,7 @@ export const translations = {
       ticketsBtn: "Comprar entradas",
     },
     hero: {
-      date: "12 DE SEPTIEMBRE DE 2026 | LIMA - PERÚ",
+      date: "9 Y 10 DE OCTUBRE DE 2026 | LIMA - PERÚ",
       titleLine1: "Ng Conf Perú",
       titleLine2: "2026",
       desc: "¡Únete a nosotros para una experiencia única en una conferencia sobre Angular en Perú! Descubre lo último en desarrollo de Angular y conecta con expertos y otros desarrolladores.",
@@ -108,7 +108,7 @@ export const translations = {
       items: [
         {
           q: "¿Cuándo y dónde se llevará a cabo la Ng Conf Perú 2026?",
-          a: "La conferencia se llevará a cabo el sábado 12 de septiembre de 2026 de forma presencial en el Auditorio de la Universidad de Ingeniería y Tecnología (UTEC), ubicado en Jr. Medrano Silva 165, Barranco, Lima - Perú.",
+          a: "La conferencia se llevará a cabo los 9 y 10 de octubre de 2026 de forma presencial en el Auditorio de la Universidad de Ingeniería y Tecnología (UTEC), ubicado en Jr. Medrano Silva 165, Barranco, Lima - Perú.",
           category: "general",
         },
         {
@@ -218,7 +218,7 @@ export const translations = {
       ticketsBtn: "Buy Tickets",
     },
     hero: {
-      date: "SEPTEMBER 12, 2026 | LIMA - PERU",
+      date: "OCTOBER 9 - 10, 2026 | LIMA - PERU",
       titleLine1: "Ng Conf Perú",
       titleLine2: "2026",
       desc: "Join us for a unique Angular conference experience in Peru! Discover the latest in Angular development and connect with experts and fellow developers.",

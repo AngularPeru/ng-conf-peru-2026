@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import StatsBanner from "@/components/StatsBanner";
 import TicketSection from "@/components/TicketSection";
+import EventsSection from "@/components/EventsSection";
 import GallerySection from "@/components/GallerySection";
 import SpeakersSection from "@/components/SpeakersSection";
 import SponsorSection from "@/components/SponsorSection";
@@ -20,6 +21,7 @@ export default function Home() {
       <AboutSection />
       <StatsBanner />
       <TicketSection />
+      <EventsSection />
       <GallerySection />
       <SpeakersSection />
       <SponsorSection />

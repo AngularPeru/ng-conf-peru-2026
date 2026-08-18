@@ -26,6 +26,7 @@ export default function Navbar() {
     { name: t.nav.speakers, href: "/#speakers" },
     { name: t.nav.venue, href: "/#donde-es" },
     { name: t.nav.agenda, href: "/agenda" },
+    { name: t.nav.events, href: "/eventos" },
     { name: t.nav.conduct, href: "/codigo-de-conducta" },
     { name: t.nav.faq, href: "/faq" },
   ];

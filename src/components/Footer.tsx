@@ -44,6 +44,12 @@ export default function Footer() {
               {t.footer.aboutCommunity}
             </Link>
             <Link
+              href="/eventos"
+              className="hover:text-white transition-colors"
+            >
+              {t.footer.events}
+            </Link>
+            <Link
               href="/codigo-de-conducta"
               className="hover:text-white transition-colors"
             >

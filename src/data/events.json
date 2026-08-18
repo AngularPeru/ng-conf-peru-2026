@@ -1,0 +1,133 @@
+[
+  {
+    "id": "1",
+    "title": "ElevenLabs + Make: agentes de voz con Notion",
+    "hosts": "By Mayckol Cruzado, Jhon Miranda, IA Labs Events & Make",
+    "location": "Google Meet",
+    "tags": ["Eleven Labs", "Make", "Notion"],
+    "format": "Virtual",
+    "attendees": "+56",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/jo/d9505a3e-8318-4b77-a277-c6a09fa1aea9.jpg",
+    "url": "https://luma.com/4i3o4xqa"
+  },
+  {
+    "id": "2",
+    "title": "Notion Developer Platform: automatiza, conecta y construye",
+    "hosts": "By IA Labs Events",
+    "location": "Lima, Peru",
+    "tags": ["Notion", "Developer", "Automation"],
+    "format": "Presencial",
+    "attendees": "+2",
+    "badgeStatus": "Near Capacity",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/api-uploads/6p/b4b0e1ba-1081-424d-b4e0-bcf37a4954f0.jpg",
+    "url": "https://luma.com/notion-eyca"
+  },
+  {
+    "id": "3",
+    "title": "[Coffee Lab] Eleven Creative & Make: automatiza tus contenidos de multimedia",
+    "hosts": "By IA Labs Events, Jhon Miranda, Mayckol Cruzado & Make",
+    "location": "Caffee Lab - Lima, Peru",
+    "tags": ["Eleven Labs", "Make", "Coffee Lab"],
+    "format": "Presencial",
+    "badgeStatus": "Near Capacity",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/i6/f703a389-f321-4e5f-ae24-e13eed9c1006.jpg",
+    "url": "https://luma.com/dhp1n0wh"
+  },
+  {
+    "id": "4",
+    "title": "Build with Claude Lima",
+    "hosts": "By IA Labs Events",
+    "location": "Magdalena del Mar, Peru",
+    "tags": ["Claude Perú", "Anthropic"],
+    "format": "Presencial",
+    "attendees": "+102",
+    "badgeStatus": "Sold Out",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/im/79673772-c81e-46a9-9af3-d338464cf343.jpg",
+    "url": "https://luma.com/zleglkgx"
+  },
+  {
+    "id": "5",
+    "title": "Hice 5 cifras en dos meses con IA",
+    "hosts": "By Mayckol Cruzado",
+    "location": "Google Meet",
+    "tags": ["Claude Perú", "Monetización IA"],
+    "format": "Virtual",
+    "attendees": "+29",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/lb/b8838c7a-c218-40d2-b772-bf9950e10905.png",
+    "url": "https://luma.com/g4wo6f50"
+  },
+  {
+    "id": "6",
+    "title": "Convierte tu Second Brain en una Content Machine",
+    "hosts": "By Mayckol Cruzado, Jhon Miranda & IA Labs Events",
+    "location": "Google Meet",
+    "tags": ["Notion", "Open Claw"],
+    "format": "Virtual",
+    "attendees": "+13",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/t9/8a55604b-5135-4286-ab1e-99956e1e76a0.jpg",
+    "url": "https://luma.com/42032713"
+  },
+  {
+    "id": "7",
+    "title": "[Workshop] Construye tu Second Brain con Openclaw",
+    "hosts": "By IA Labs Events, Jhon Miranda & Mayckol Cruzado",
+    "location": "To Be Announced",
+    "tags": ["Notion", "Open Claw", "Workshop"],
+    "format": "Presencial",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/vj/f09c71fe-b6a1-4c0c-a132-7a0c6013b9f1.jpg",
+    "url": "https://luma.com/32x58ved"
+  },
+  {
+    "id": "8",
+    "title": "Construye con Cursor y Notion as Code",
+    "hosts": "By Mayckol Cruzado, Jhon Miranda & IA Labs Events",
+    "location": "Google Meet",
+    "tags": ["Cursor", "Notion as Code"],
+    "format": "Virtual",
+    "attendees": "+85",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/2c/9895f597-052b-4233-9871-11085a55e79a.jpg",
+    "url": "https://luma.com/fnm0cz6x"
+  },
+  {
+    "id": "9",
+    "title": "De horas a minutos: edita videos con Claude, MCP y Remotion",
+    "hosts": "By Mayckol Cruzado",
+    "location": "Google Meet",
+    "tags": ["Claude Perú", "MCP", "Remotion"],
+    "format": "Virtual",
+    "attendees": "+30",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/ax/d945fa1b-43ee-43d0-9dbc-17a9d22334be.png",
+    "url": "https://luma.com/h6i4qbe4"
+  },
+  {
+    "id": "10",
+    "title": "Claude para el trabajo aburrido: convierte lo repetitivo en un sistema",
+    "hosts": "By Mayckol Cruzado",
+    "location": "Google Meet",
+    "tags": ["Claude Perú", "Automatización"],
+    "format": "Virtual",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/jn/16367554-47dd-4b98-bb2e-b0aecde27499.png",
+    "url": "https://luma.com/gzy772ev"
+  },
+  {
+    "id": "11",
+    "title": "Cómo construir un asistente de entrevistas laborales con IA",
+    "hosts": "By Mayckol Cruzado",
+    "location": "Google Meet",
+    "tags": ["Claude Perú", "Asistente IA"],
+    "format": "Virtual",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/k9/7470a019-5442-478a-b446-95086cf3b541.png",
+    "url": "https://luma.com/35ahnbul"
+  },
+  {
+    "id": "12",
+    "title": "Cómo construir un sistema multi-agente en producción",
+    "hosts": "By Mayckol Cruzado",
+    "location": "Google Meet",
+    "tags": ["Claude Perú", "Multi-Agentes"],
+    "format": "Virtual",
+    "attendees": "+107",
+    "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/uploads/ld/ee184635-08d1-4c0a-92fa-62188181b867.png",
+    "url": "https://luma.com/0vqr9ma8"
+  }
+]

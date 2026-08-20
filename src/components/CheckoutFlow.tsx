@@ -5,8 +5,23 @@ import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import KRGlue from "@lyracom/embedded-form-glue";
 
-const TICKET_PRICE_CENTS = "5000"; // S/ 50.00 in centavos
-const TICKET_CURRENCY = "PEN";
+// Pricing — single source of truth
+const PRICING = {
+  launchPriceSoles: 50,
+  regularPriceSoles: 80,
+  // Izipay expects amount in centavos as string (no decimals)
+  get launchPriceCents() {
+    return String(this.launchPriceSoles * 100);
+  },
+  currency: "PEN",
+  // Display strings
+  get launchDisplay() {
+    return `S/ ${this.launchPriceSoles}`;
+  },
+  get regularDisplay() {
+    return `S/ ${this.regularPriceSoles}`;
+  },
+};
 
 const SWAG_OPTIONS = [
   { id: "angular-classic", name: "Angular Classic", src: "https://placehold.co/400x400/1a1a2e/E5097F?text=Angular%0AClassic" },
@@ -93,7 +108,7 @@ export default function CheckoutFlow() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          amount: TICKET_PRICE_CENTS,
+          amount: PRICING.launchPriceCents,
           customer: {
             email: info.email,
             names: info.firstName,
@@ -101,7 +116,7 @@ export default function CheckoutFlow() {
             phone: "999999999",
             document: info.docNumber,
           },
-          currency: TICKET_CURRENCY,
+          currency: PRICING.currency,
           orderId: transactionId,
         }),
       });
@@ -356,7 +371,7 @@ export default function CheckoutFlow() {
                   <option value="3XL">3XL</option>
                 </select>
               </div>
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-300">
                   {t.checkout.info.dietary}
                 </label>
@@ -368,7 +383,7 @@ export default function CheckoutFlow() {
                   }
                   className="w-full bg-[#0A0A0C] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#E5097F] transition-colors"
                 />
-              </div>
+              </div> */}
             </div>
 
             {/* Swag Selection */}
@@ -478,7 +493,7 @@ export default function CheckoutFlow() {
                     {t.checkout.payment.processing}
                   </span>
                 ) : (
-                  t.checkout.payment.pay
+                  `${t.checkout.payment.pay} ${PRICING.launchDisplay}`
                 )}
               </button>
             </div>
@@ -541,6 +556,13 @@ export default function CheckoutFlow() {
             {t.checkout.summary.title}
           </h3>
 
+          {/* Launch Offer Badge */}
+          <div className="mb-4 rounded-lg bg-[#E5097F]/10 border border-[#E5097F]/20 px-3 py-2 text-center">
+            <p className="text-xs font-bold text-[#E5097F] uppercase tracking-wider">
+              {t.checkout.summary.launchBadge}
+            </p>
+          </div>
+
           <div className="flex items-start justify-between mb-6 pb-6 border-b border-white/10">
             <div>
               <p className="font-semibold text-gray-200">
@@ -548,15 +570,20 @@ export default function CheckoutFlow() {
               </p>
               <p className="text-sm text-gray-400 mt-1">1x</p>
             </div>
-            <p className="font-semibold text-white">
-              {t.checkout.summary.price}
-            </p>
+            <div className="text-right">
+              <p className="text-xs text-gray-500 line-through">
+                {PRICING.regularDisplay}
+              </p>
+              <p className="font-semibold text-white">
+                {PRICING.launchDisplay}
+              </p>
+            </div>
           </div>
 
           <div className="flex items-center justify-between">
             <p className="font-bold text-gray-300">{t.checkout.summary.total}</p>
             <p className="text-2xl font-bold text-[#E5097F]">
-              {t.checkout.summary.price}
+              {PRICING.launchDisplay}
             </p>
           </div>
         </div>

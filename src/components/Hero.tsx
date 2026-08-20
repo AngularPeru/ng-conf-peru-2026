@@ -60,12 +60,12 @@ export default function Hero() {
               {t.hero.buyTickets}
             </Link>
 
-            <Link
+            {/* <Link
               href="mailto:angularcommunityperu@gmail.com"
               className="px-8 py-3.5 rounded-full bg-transparent hover:bg-white/10 text-white font-medium text-sm sm:text-base border border-white/40 hover:border-white transition-all duration-300"
             >
               {t.hero.submitTalk}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

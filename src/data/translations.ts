@@ -23,14 +23,12 @@ export const translations = {
         next: "Continuar al Pago"
       },
       payment: {
-        title: "Detalles de Pago",
-        cardName: "Nombre en la tarjeta",
-        cardNumber: "Número de tarjeta",
-        expiry: "MM/AA",
-        cvv: "CVV",
-        pay: "Pagar Entrada",
-        back: "Volver",
-        error: "Los datos de la tarjeta no son válidos. Por favor, intenta de nuevo."
+        title: "Pago Seguro",
+        pay: "Pagar S/ 150.00",
+        back: "← Volver",
+        processing: "Procesando...",
+        izipayDescription: "Al hacer clic en el botón de pago, se abrirá una ventana segura de Izipay para completar tu compra.",
+        error: "Error al procesar el pago. Por favor, intenta de nuevo."
       },
       summary: {
         title: "Resumen de Compra",
@@ -271,14 +269,12 @@ export const translations = {
         next: "Continue to Payment"
       },
       payment: {
-        title: "Payment Details",
-        cardName: "Name on card",
-        cardNumber: "Card number",
-        expiry: "MM/YY",
-        cvv: "CVV",
-        pay: "Pay Ticket",
-        back: "Back",
-        error: "Invalid card details. Please try again."
+        title: "Secure Payment",
+        pay: "Pay S/ 150.00",
+        back: "← Back",
+        processing: "Processing...",
+        izipayDescription: "Click the payment button to open a secure Izipay window to complete your purchase.",
+        error: "Error processing payment. Please try again."
       },
       summary: {
         title: "Order Summary",

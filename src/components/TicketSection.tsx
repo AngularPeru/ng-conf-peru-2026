@@ -27,7 +27,7 @@ export default function TicketSection() {
 
             <div className="pt-2">
               <Link
-                href="#entradas"
+                href="/checkout"
                 className="inline-block px-8 py-3.5 rounded-full bg-[#E90464] hover:bg-[#FF007A] text-white font-bold text-base shadow-md shadow-[#E90464]/30 hover:scale-105 active:scale-95 transition-all duration-200"
               >
                 {t.tickets.btn}

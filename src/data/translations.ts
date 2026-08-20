@@ -2,6 +2,50 @@ export type Language = "ES" | "EN";
 
 export const translations = {
   ES: {
+    checkout: {
+      steps: {
+        info: "Información Personal",
+        payment: "Pago",
+        success: "¡Completado!"
+      },
+      info: {
+        title: "Información del Asistente",
+        firstName: "Nombre",
+        lastName: "Apellidos",
+        email: "Correo Electrónico",
+        docType: "Tipo de Documento",
+        docTypeDNI: "DNI",
+        docTypeCE: "Carné de Extranjería",
+        docTypePasaporte: "Pasaporte",
+        docNumber: "Número de Documento",
+        tshirtSize: "Talla de Camiseta",
+        swagTitle: "Elige tu Polera",
+        swagSubtitle: "Incluida con tu entrada. Selecciona el diseño que más te guste.",
+        dietary: "Restricciones Alimenticias (Opcional)",
+        next: "Continuar al Pago"
+      },
+      payment: {
+        title: "Pago Seguro",
+        pay: "Pagar S/ 50.00",
+        back: "← Volver",
+        processing: "Procesando...",
+        izipayDescription: "Al hacer clic en el botón de pago, se abrirá una ventana segura de Izipay para completar tu compra.",
+        error: "Error al procesar el pago. Por favor, intenta de nuevo."
+      },
+      summary: {
+        title: "Resumen de Compra",
+        ticketName: "Entrada General - Ng Conf Perú 2026",
+        price: "S/ 50.00",
+        total: "Total:"
+      },
+      success: {
+        title: "¡Compra Exitosa!",
+        desc: "Tu entrada ha sido confirmada. Te hemos enviado un correo con los detalles y tu código QR.",
+        ticketNumber: "Número de Entrada",
+        emailSent: "Revisa tu bandeja de entrada para ver tu entrada con código QR.",
+        homeBtn: "Volver al Inicio"
+      }
+    },
     nav: {
       speakers: "Speakers",
       venue: "Venue",
@@ -208,6 +252,50 @@ export const translations = {
     },
   },
   EN: {
+    checkout: {
+      steps: {
+        info: "Personal Info",
+        payment: "Payment",
+        success: "Complete!"
+      },
+      info: {
+        title: "Attendee Information",
+        firstName: "First Name",
+        lastName: "Last Name",
+        email: "Email Address",
+        docType: "Document Type",
+        docTypeDNI: "ID Card",
+        docTypeCE: "Foreigner ID",
+        docTypePasaporte: "Passport",
+        docNumber: "Document Number",
+        tshirtSize: "T-Shirt Size",
+        swagTitle: "Choose Your T-Shirt",
+        swagSubtitle: "Included with your ticket. Select the design you like the most.",
+        dietary: "Dietary Restrictions (Optional)",
+        next: "Continue to Payment"
+      },
+      payment: {
+        title: "Secure Payment",
+        pay: "Pay S/ 50.00",
+        back: "← Back",
+        processing: "Processing...",
+        izipayDescription: "Click the payment button to open a secure Izipay window to complete your purchase.",
+        error: "Error processing payment. Please try again."
+      },
+      summary: {
+        title: "Order Summary",
+        ticketName: "General Ticket - Ng Conf Peru 2026",
+        price: "S/ 50.00",
+        total: "Total:"
+      },
+      success: {
+        title: "Purchase Successful!",
+        desc: "Your ticket has been confirmed. We have sent you an email with the details and your QR code.",
+        ticketNumber: "Ticket Number",
+        emailSent: "Check your inbox to see your ticket with QR code.",
+        homeBtn: "Back to Home"
+      }
+    },
     nav: {
       speakers: "Speakers",
       venue: "Venue",

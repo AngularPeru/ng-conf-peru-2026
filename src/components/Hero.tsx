@@ -54,18 +54,18 @@ export default function Hero() {
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
-              href="/#entradas"
+              href="/checkout"
               className="px-8 py-3.5 rounded-full bg-[#E5097F] hover:bg-[#FF007A] text-white font-bold text-sm sm:text-base shadow-lg shadow-[#E5097F]/40 hover:scale-105 active:scale-95 transition-all duration-300"
             >
               {t.hero.buyTickets}
             </Link>
 
-            <Link
+            {/* <Link
               href="mailto:angularcommunityperu@gmail.com"
               className="px-8 py-3.5 rounded-full bg-transparent hover:bg-white/10 text-white font-medium text-sm sm:text-base border border-white/40 hover:border-white transition-all duration-300"
             >
               {t.hero.submitTalk}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

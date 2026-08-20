@@ -24,7 +24,7 @@ export const translations = {
       },
       payment: {
         title: "Pago Seguro",
-        pay: "Pagar S/ 150.00",
+        pay: "Pagar S/ 50.00",
         back: "← Volver",
         processing: "Procesando...",
         izipayDescription: "Al hacer clic en el botón de pago, se abrirá una ventana segura de Izipay para completar tu compra.",
@@ -33,12 +33,14 @@ export const translations = {
       summary: {
         title: "Resumen de Compra",
         ticketName: "Entrada General - Ng Conf Perú 2026",
-        price: "S/ 150.00",
+        price: "S/ 50.00",
         total: "Total:"
       },
       success: {
         title: "¡Compra Exitosa!",
-        desc: "Tu entrada ha sido confirmada. Te hemos enviado un correo con los detalles.",
+        desc: "Tu entrada ha sido confirmada. Te hemos enviado un correo con los detalles y tu código QR.",
+        ticketNumber: "Número de Entrada",
+        emailSent: "Revisa tu bandeja de entrada para ver tu entrada con código QR.",
         homeBtn: "Volver al Inicio"
       }
     },
@@ -270,7 +272,7 @@ export const translations = {
       },
       payment: {
         title: "Secure Payment",
-        pay: "Pay S/ 150.00",
+        pay: "Pay S/ 50.00",
         back: "← Back",
         processing: "Processing...",
         izipayDescription: "Click the payment button to open a secure Izipay window to complete your purchase.",
@@ -279,12 +281,14 @@ export const translations = {
       summary: {
         title: "Order Summary",
         ticketName: "General Ticket - Ng Conf Peru 2026",
-        price: "S/ 150.00",
+        price: "S/ 50.00",
         total: "Total:"
       },
       success: {
         title: "Purchase Successful!",
-        desc: "Your ticket has been confirmed. We have sent you an email with the details.",
+        desc: "Your ticket has been confirmed. We have sent you an email with the details and your QR code.",
+        ticketNumber: "Ticket Number",
+        emailSent: "Check your inbox to see your ticket with QR code.",
         homeBtn: "Back to Home"
       }
     },

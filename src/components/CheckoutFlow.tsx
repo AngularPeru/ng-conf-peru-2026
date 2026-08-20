@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import KRGlue from "@lyracom/embedded-form-glue";
 
-const TICKET_PRICE_CENTS = "15000"; // S/ 150.00 in centavos
+const TICKET_PRICE_CENTS = "5000"; // S/ 50.00 in centavos
 const TICKET_CURRENCY = "PEN";
 
 export default function CheckoutFlow() {
@@ -14,6 +14,7 @@ export default function CheckoutFlow() {
   const [step, setStep] = useState<1 | 2 | 3>(1);
   const [error, setError] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [ticketId, setTicketId] = useState<string | null>(null);
 
   // Form State
   const [info, setInfo] = useState({
@@ -145,6 +146,8 @@ export default function CheckoutFlow() {
         });
 
         if (response.status === 200) {
+          const data = await response.json();
+          setTicketId(data.ticketId);
           setStep(3);
           setError(null);
         } else {
@@ -340,6 +343,8 @@ export default function CheckoutFlow() {
                   <option value="M">M</option>
                   <option value="L">L</option>
                   <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                  <option value="3XL">3XL</option>
                 </select>
               </div>
               <div className="space-y-2">
@@ -452,6 +457,19 @@ export default function CheckoutFlow() {
             </h2>
             <p className="text-gray-400 text-lg max-w-md mx-auto">
               {t.checkout.success.desc}
+            </p>
+            {ticketId && (
+              <div className="bg-[#0A0A0C] rounded-xl p-4 max-w-sm mx-auto border border-white/10">
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">
+                  {t.checkout.success.ticketNumber}
+                </p>
+                <p className="text-[#E5097F] font-mono font-bold text-sm">
+                  {ticketId}
+                </p>
+              </div>
+            )}
+            <p className="text-gray-500 text-sm">
+              {t.checkout.success.emailSent}
             </p>
             <div className="pt-8">
               <Link

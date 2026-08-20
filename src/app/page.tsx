@@ -21,9 +21,9 @@ export default function Home() {
       <StatsBanner />
       <TicketSection />
       <GallerySection />
-      <SpeakersSection />
+      {/* <SpeakersSection /> */}
       <SponsorSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <VenueSection />
       <SponsorsGrid />
       <BottomCta />

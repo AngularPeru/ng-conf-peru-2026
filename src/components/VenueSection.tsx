@@ -17,11 +17,11 @@ export default function VenueSection() {
             {t.venue.titleLine2}
           </h2>
 
-          <div className="text-gray-700 text-base sm:text-lg leading-relaxed space-y-1">
+          {/* <div className="text-gray-700 text-base sm:text-lg leading-relaxed space-y-1">
             <p>{t.venue.descLine1}</p>
             <p>{t.venue.descLine2}</p>
             <p className="font-semibold text-gray-900">{t.venue.descHighlight}</p>
-          </div>
+          </div> */}
         </div>
 
         {/* 2-Column Split Container: UTEC Photo + Google Maps */}

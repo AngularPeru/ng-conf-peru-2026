@@ -25,7 +25,7 @@ export default function Navbar() {
   const navLinks = [
     { name: t.nav.speakers, href: "/#speakers" },
     { name: t.nav.venue, href: "/#donde-es" },
-    { name: t.nav.agenda, href: "/agenda" },
+    // { name: t.nav.agenda, href: "/agenda" },
     { name: t.nav.conduct, href: "/codigo-de-conducta" },
     { name: t.nav.faq, href: "/faq" },
   ];

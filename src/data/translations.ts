@@ -19,6 +19,8 @@ export const translations = {
         docTypePasaporte: "Pasaporte",
         docNumber: "Número de Documento",
         tshirtSize: "Talla de Camiseta",
+        swagTitle: "Elige tu Polera",
+        swagSubtitle: "Incluida con tu entrada. Selecciona el diseño que más te guste.",
         dietary: "Restricciones Alimenticias (Opcional)",
         next: "Continuar al Pago"
       },
@@ -267,6 +269,8 @@ export const translations = {
         docTypePasaporte: "Passport",
         docNumber: "Document Number",
         tshirtSize: "T-Shirt Size",
+        swagTitle: "Choose Your T-Shirt",
+        swagSubtitle: "Included with your ticket. Select the design you like the most.",
         dietary: "Dietary Restrictions (Optional)",
         next: "Continue to Payment"
       },

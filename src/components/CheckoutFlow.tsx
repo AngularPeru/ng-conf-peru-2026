@@ -8,6 +8,13 @@ import KRGlue from "@lyracom/embedded-form-glue";
 const TICKET_PRICE_CENTS = "5000"; // S/ 50.00 in centavos
 const TICKET_CURRENCY = "PEN";
 
+const SWAG_OPTIONS = [
+  { id: "angular-classic", name: "Angular Classic", src: "https://placehold.co/400x400/1a1a2e/E5097F?text=Angular%0AClassic" },
+  { id: "ng-conf-logo", name: "Ng Conf Logo", src: "https://placehold.co/400x400/1a1a2e/ffffff?text=Ng+Conf%0ALogo" },
+  { id: "peru-dev", name: "Perú Dev", src: "https://placehold.co/400x400/1a1a2e/FFD700?text=Per%C3%BA%0ADev" },
+  { id: "minimal-code", name: "Minimal Code", src: "https://placehold.co/400x400/1a1a2e/00D4AA?text=%7B%7D+Code" },
+];
+
 export default function CheckoutFlow() {
   const { t } = useLanguage();
 
@@ -24,6 +31,7 @@ export default function CheckoutFlow() {
     docType: "DNI",
     docNumber: "",
     tshirtSize: "M",
+    swag: "angular-classic",
     dietary: "",
   });
 
@@ -140,6 +148,7 @@ export default function CheckoutFlow() {
               docType: info.docType,
               docNumber: info.docNumber,
               tshirtSize: info.tshirtSize,
+              swag: info.swag,
               dietary: info.dietary,
             },
           }),
@@ -359,6 +368,48 @@ export default function CheckoutFlow() {
                   }
                   className="w-full bg-[#0A0A0C] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#E5097F] transition-colors"
                 />
+              </div>
+            </div>
+
+            {/* Swag Selection */}
+            <div className="space-y-3 pt-2">
+              <label className="text-sm font-medium text-gray-300">
+                {t.checkout.info.swagTitle}
+              </label>
+              <p className="text-xs text-gray-500">
+                {t.checkout.info.swagSubtitle}
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {SWAG_OPTIONS.map((option) => (
+                  <button
+                    key={option.id}
+                    type="button"
+                    onClick={() => setInfo({ ...info, swag: option.id })}
+                    className={`relative group rounded-xl overflow-hidden border-2 transition-all duration-200 ${
+                      info.swag === option.id
+                        ? "border-[#E5097F] shadow-lg shadow-[#E5097F]/20 scale-[1.02]"
+                        : "border-white/10 hover:border-white/25"
+                    }`}
+                  >
+                    <img
+                      src={option.src}
+                      alt={option.name}
+                      className="w-full aspect-square object-cover"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-2">
+                      <p className="text-xs font-semibold text-white truncate">
+                        {option.name}
+                      </p>
+                    </div>
+                    {info.swag === option.id && (
+                      <div className="absolute top-2 right-2 w-5 h-5 bg-[#E5097F] rounded-full flex items-center justify-center">
+                        <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                    )}
+                  </button>
+                ))}
               </div>
             </div>
 

@@ -24,6 +24,7 @@ export async function POST(request: Request) {
       docType: formData.docType,
       docNumber: formData.docNumber,
       tshirtSize: formData.tshirtSize,
+      swag: formData.swag,
       dietary: formData.dietary,
     });
 

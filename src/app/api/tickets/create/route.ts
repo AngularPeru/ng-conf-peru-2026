@@ -4,9 +4,9 @@ import { createTicket } from "@/lib/tickets";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, docType, docNumber, tshirtSize, dietary } = body;
+    const { firstName, lastName, email, docType, docNumber, tshirtSize, swag, dietary } = body;
 
-    if (!firstName || !lastName || !email || !docType || !docNumber || !tshirtSize) {
+    if (!firstName || !lastName || !email || !docType || !docNumber || !tshirtSize || !swag) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
@@ -20,6 +20,7 @@ export async function POST(request: Request) {
       docType,
       docNumber,
       tshirtSize,
+      swag,
       dietary,
     });
 

@@ -12,6 +12,7 @@ export interface CreateTicketParams {
   docType: string;
   docNumber: string;
   tshirtSize: string;
+  swag: string;
   dietary?: string;
 }
 
@@ -23,6 +24,7 @@ export interface Ticket {
   docType: string;
   docNumber: string;
   tshirtSize: string;
+  swag: string;
   dietary: string;
   status: "valid" | "used";
   createdAt: string;
@@ -69,6 +71,7 @@ export async function createTicket(
     docType: params.docType,
     docNumber: params.docNumber,
     tshirtSize: params.tshirtSize,
+    swag: params.swag,
     dietary: params.dietary || "",
     status: "valid",
     createdAt: new Date().toISOString(),

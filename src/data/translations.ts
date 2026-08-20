@@ -26,7 +26,7 @@ export const translations = {
       },
       payment: {
         title: "Pago Seguro",
-        pay: "Pagar S/ 50.00",
+        pay: "Pagar",
         back: "← Volver",
         processing: "Procesando...",
         izipayDescription: "Al hacer clic en el botón de pago, se abrirá una ventana segura de Izipay para completar tu compra.",
@@ -35,7 +35,7 @@ export const translations = {
       summary: {
         title: "Resumen de Compra",
         ticketName: "Entrada General - Ng Conf Perú 2026",
-        price: "S/ 50.00",
+        launchBadge: "🔥 Precio de lanzamiento",
         total: "Total:"
       },
       success: {
@@ -276,7 +276,7 @@ export const translations = {
       },
       payment: {
         title: "Secure Payment",
-        pay: "Pay S/ 50.00",
+        pay: "Pay",
         back: "← Back",
         processing: "Processing...",
         izipayDescription: "Click the payment button to open a secure Izipay window to complete your purchase.",
@@ -285,7 +285,7 @@ export const translations = {
       summary: {
         title: "Order Summary",
         ticketName: "General Ticket - Ng Conf Peru 2026",
-        price: "S/ 50.00",
+        launchBadge: "🔥 Launch Price",
         total: "Total:"
       },
       success: {
